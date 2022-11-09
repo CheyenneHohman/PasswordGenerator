@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@700&display=swap');
+
+* {
+    /* includes padding & border when setting width/height for an element */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #6495ed;
+    color: #eef1ef;
+    font-family: 'Montserrat';
+    /* Flexbox is used here to center the div with the ID container, vertically & horizontally */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    /* setting the height to 100vh so the div will be centered vertically in the browser window, aka viewport */
+    height: 100vh;
+    /* add padding to the body element so the div container is not right up against the edge of the viewport on small screen sizes  */
+    padding: 25px; 
+}
+
+h2 {
+    /* top right/left bottom  */
+    margin: 10px 0 20px; 
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #6495ed;
+    /* Removes the default button border */
+    border: none;
+    /* Buttons do NOT inherit text color. Must apply a new text color directly to the element. */
+    color: #eef1ef;
+    /* Changes the cursor when hovering over a button */
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.option {
+    display: flex;
+    justify-content: left;
+    margin: 15px;
+}
+
+#container {
+    background-color: #639;
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+#length {
+    margin-left: 10px;
+}
+
+#result-container {
+    background-color: #243119;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px; 
+    padding: 10px 5px 10px 10px;
+    /* flex used to position span and button elements */
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#clipboard {
+    font-size: 20px;
+    border-radius: 3px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+    border-radius: 5px;
+}

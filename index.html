@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FontAwesome Kit Link -->
+    <script src="https://kit.fontawesome.com/18a9621562.js" crossorigin="anonymous"></script>
+
+    <!-- CSS Stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+     <!-- #container -->
+     <div id="container">
+        <h2>Password-O-Matic</h2>
+        <!-- section#result-container -->
+        <section id="result-container">
+            <!-- This span is where the password will be displayed -->
+            <!-- span#result -->
+            <span id="result"></span>
+            <!-- button.btn#clipboard -->
+            <button class="btn" id="clipboard">
+                <!-- Font Awesome Icon -->
+                <i class="fa-regular fa-clipboard"></i>
+            </button>
+        </section>
+
+        <!-- Options Section -->
+        <section id="options">
+            <div class="option">
+                <input type="checkbox" id="lowercase" checked>
+                <label for="lowercase">Lowercase Letters</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="uppercase" checked>
+                <label for="uppercase">Uppercase Letters</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="numbers" checked>
+                <label for="numbers">Numbers</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="symbols" checked>
+                <label for="symbols">Symbols</label>
+            </div>
+            <div class="option">
+                <label for="length">Length:</label>
+                <!-- Value is the starting/default number. Also, min/max sets the range that the user can select. -->
+                <input type="number" id="length" value="10" min="4" max="20">
+            </div>
+        </section>
+        <!-- button.btn#generate -->
+        <button class="btn" id="generate">Generate Password</button>
+    </div>
+
+
+
+    <!-- JavaScript link -->
+<script src="app.js"></script>
+</body>
+</html>
